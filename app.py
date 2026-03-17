@@ -12,7 +12,7 @@ def competition():
     return render_template('competition.html')
 
 #改成互動 3/17
-@app.route('activities', methods=['GET', 'POST'])
+@app.route('/activities', methods=['GET', 'POST'])
 def activities():
     if request.method == 'POST':
         # 2. 讀取學生的問題
